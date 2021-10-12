@@ -1,7 +1,7 @@
 <template>
   <div class="links">
     <ul class="links__list">
-      <li v-if="data.twitter.value" class="links__list-item">
+      <li v-if="data.twitter.value" class="links__list-item" data-kontent-element-codename="twitter">
         <a
           :href="`https://www.twitter.com/${data.twitter.value}`"
           target="_blank"
@@ -10,7 +10,7 @@
           <i class="icon-twitter" />
         </a>
       </li>
-      <li v-if="data.github.value" class="links__list-item">
+      <li v-if="data.github.value" class="links__list-item" data-kontent-element-codename="github">
         <a
           :href="`https://www.github.com/${data.github.value}`"
           target="_blank"
@@ -19,7 +19,7 @@
           <i class="icon-github" />
         </a>
       </li>
-      <li v-if="data.vk.value" class="links__list-item">
+      <li v-if="data.vk.value" class="links__list-item" data-kontent-element-codename="vk">
         <a
           :href="`https://www.vk.com/${data.vk.value}`"
           target="_blank"
@@ -30,12 +30,12 @@
       </li>
     </ul>
     <ul class="links__list">
-      <li v-if="data.email.value" class="links__list-item">
+      <li v-if="data.email.value" class="links__list-item" data-kontent-element-codename="email">
         <a :href="`mailto:${data.email.value}`">
           <i class="icon-mail" />
         </a>
       </li>
-      <li v-if="data.telegram.value" class="links__list-item">
+      <li v-if="data.telegram.value" class="links__list-item" data-kontent-element-codename="telegram">
         <a :href="`telegram:${data.telegram.value}`">
           <i class="icon-paper-plane" />
         </a>

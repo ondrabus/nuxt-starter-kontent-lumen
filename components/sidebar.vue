@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar">
-      <div class="sidebar__inner" v-if="!$fetchState.pending">
+      <div class="sidebar__inner" v-if="!$fetchState.pending" :data-kontent-item-id="author.system.id">
         <div class="sidebar__author">
           <div>
             <nuxt-link to="/">
@@ -10,19 +10,20 @@
                 width="75"
                 height="75"
                 :alt="author.name.value"
+                data-kontent-element-codename="avatar_image"
               />
             </nuxt-link>
-            <h1 v-if="isHomePage" class="sidebar__author-title">
+            <h1 v-if="isHomePage" class="sidebar__author-title" data-kontent-element-codename="name">
                 <nuxt-link class="sidebar__author-title-link" to="/">
                     {{author.name.value}}
                 </nuxt-link>
             </h1>
-            <h2 v-else class="sidebar__author-title">
+            <h2 v-else class="sidebar__author-title" data-kontent-element-codename="name">
                 <nuxt-link class="sidebar__author-title-link" to="/">
                     {{author.name.value}}
                 </nuxt-link>
             </h2>
-            <p class="sidebar__author-subtitle">
+            <p class="sidebar__author-subtitle" data-kontent-element-codename="bio">
                 {{author.bio.value}}
             </p>
           </div>
