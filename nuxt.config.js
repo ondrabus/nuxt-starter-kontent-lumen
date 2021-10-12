@@ -45,8 +45,8 @@ export default {
   kenticokontent: {
     projectId: process.env.KONTENT_PROJECT_ID,
     enableAdvancedLogging: false,
-    previewApiKey: "ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAianRpIjogImMwNmQwODE4YzI3NTQxZmM5YmNkM2Q5Y2E5MTY2NWUzIiwNCiAgImlhdCI6ICIxNjEzMDU0MDIzIiwNCiAgImV4cCI6ICIxOTU4NjU0MDIzIiwNCiAgInByb2plY3RfaWQiOiAiZjFkNDI0MGVkZmE3MDE0ZmVhYjVhMjkwMTBkODVhZWIiLA0KICAidmVyIjogIjEuMC4wIiwNCiAgImF1ZCI6ICJwcmV2aWV3LmRlbGl2ZXIua2VudGljb2Nsb3VkLmNvbSINCn0.OGvjC3uqHtlxBUDoE9YONpQIFeMLqcjpab97Gfbli78",
-    enablePreviewMode: false
+    previewApiKey: process.env.KONTENT_PREVIEW_TOKEN,
+    enablePreviewMode: !(!process.env.KONTENT_PREVIEW_TOKEN),
   },
   env: {
     KONTENT_PROJECT_ID: process.env.KONTENT_PROJECT_ID
@@ -54,5 +54,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  generate: {
+    fallback: '404.html'
   }
 }
