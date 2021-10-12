@@ -1,4 +1,4 @@
-# Gatsby Starter Kontent Lumen
+# Nuxt v2 Starter Kontent Lumen
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Kentico/gatsby-kontent-starter-lumen/master/LICENSE)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
@@ -96,5 +96,4 @@ Once you've got your app running in a preview environment, you need to specify w
 
 This example is ready to be used with [Web Spotlight](https://webspotlight.kontent.ai/) functionality. If you want to explore the possibilities, take a look to the [Web Spotlight tutorial](/docs/WEB-SPOTLIGHT.md)!
 
-![Web Spotlight preview](./docs/web-spotlight.png)
 
